@@ -25,12 +25,16 @@ public class StreamMain {
             }
         }
 
+        System.out.println("Result of list 1");
         System.out.println("output of list1 :" + list1);
+        
+        System.out.println("Result of filter without stream");
         System.out.println("output of without stream :"+ listEven);
 
         //filter all even number from list1 using stream
        List<Integer> newList = list1.stream().filter(i -> i%2 == 0).collect(Collectors.toList());
-        System.out.println("output of using stream :"+ newList);
+        System.out.println("Result of filter using stream");
+       System.out.println("output of using stream :"+ newList);
 
 
     }
